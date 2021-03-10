@@ -11,8 +11,9 @@ export default function currentProduct ({currentProduct}) {
     const {title, description, price, image} = currentProduct
 
     const addProductToCart = () => {
-        const [product] = allProducts.find((item) => item.id === id);
-        dispatch(createBuyProduct(product))}
+        // const [product] = allProducts.find((item) => item.id === id);
+        // dispatch(createBuyProduct(product))
+    }
 
     return (
         <MainContainer name={title}>

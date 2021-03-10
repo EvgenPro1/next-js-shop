@@ -1,7 +1,4 @@
-import Link from "next/Link";
-import A from "../component/A";
 import {MainContainer} from "../component/MainContainer";
-// import React from "react";
 
 const Index = () => {
     return (<MainContainer name= 'Main page'>

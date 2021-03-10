@@ -1,9 +1,8 @@
 import {useState, useEffect} from "react";
 
-import Link from "next/Link";
+import Link from "next/link";
 import A from "../component/A";
 import {Button} from "../component/Button";
-// import getAllProducts from "../api/products";
 import axios from "axios";
 import {MainContainer} from "../component/MainContainer";
 
@@ -13,11 +12,10 @@ const products = ({allProducts}) => {
     const name = 'uah'
 
     const product = allProducts.map(({id, title, price, image, description}) => {
-        // console.log(state);
 
         const addProductToCart = () => {
-            const [product] = allProducts.find((item) => item.id === id);
-            dispatch(createBuyProduct(product))
+            // const [product] = allProducts.find((item) => item.id === id);
+            // dispatch(createBuyProduct(product))
         }
         return (
             <div className='d-inline-flex col-sm-3 border m-2 flex-column'>
